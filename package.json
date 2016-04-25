@@ -1,0 +1,26 @@
+{
+  "name": "tillio",
+  "version": "0.0.1",
+  "description": "Dynamic Tiles",
+  "main": "index.js",
+  "engines": {
+    "node": "0.10.26"
+  },
+  "author": {
+    "name": "Curtis DeSantis"
+  },
+  "dependencies": {
+    "express": "3.4.8",
+    "jshint": "2.6.0",
+    "q": "1.3.0"
+  },
+  "devDependencies": {
+    "mocha": "1.17.1",
+    "browserify": "13.0.0" 
+  },
+  "scripts": {
+    "test": "mocha -R spec -s 100 -t 60000 --no-exit test node_modules\\mg-channel\\test",
+    "citest": "mocha -R mocha-trx-reporter -s 100 -t 60000 --no-exit test node_modules\\mg-channel\\test"
+  },
+  "private": true
+}
